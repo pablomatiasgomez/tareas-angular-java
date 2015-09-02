@@ -3,7 +3,7 @@ package ar.edu.tareas.repos;
 import org.apache.commons.collections15.Predicate;
 import org.uqbar.commons.model.CollectionBasedHome;
 
-import ar.edu.tareas.model.Usuario;
+import ar.edu.tareas.domain.Usuario;
 
 public class RepoUsuarios extends CollectionBasedHome<Usuario> {
 

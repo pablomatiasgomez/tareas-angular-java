@@ -1,4 +1,4 @@
-package ar.edu.tareas.model;
+package ar.edu.tareas.domain;
 
 import org.uqbar.commons.model.Entity;
 

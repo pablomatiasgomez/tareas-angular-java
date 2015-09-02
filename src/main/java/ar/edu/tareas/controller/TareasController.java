@@ -4,7 +4,7 @@ import java.util.List;
 
 import spark.Spark;
 import ar.edu.tareas.controller.util.JsonTransformer;
-import ar.edu.tareas.model.Tarea;
+import ar.edu.tareas.domain.Tarea;
 import ar.edu.tareas.repos.RepoTareas;
 
 public class TareasController {

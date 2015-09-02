@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 import org.apache.commons.collections15.Predicate;
 import org.uqbar.commons.model.CollectionBasedHome;
 
-import ar.edu.tareas.model.Tarea;
-import ar.edu.tareas.model.Usuario;
+import ar.edu.tareas.domain.Tarea;
+import ar.edu.tareas.domain.Usuario;
 
 public class RepoTareas extends CollectionBasedHome<Tarea> {
 
