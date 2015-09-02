@@ -19,9 +19,8 @@ public class TareasController {
 
 		Spark.get("/tareas", (request, response) -> {
 			List<Tarea> tareas = RepoTareas.getInstance().tareasPendientes();
-			response.type("application/json");
+			response.type("application/json;charset=utf-8");
 			return tareas;
-
 		}, this.jsonTransformer);
 	}
 }
