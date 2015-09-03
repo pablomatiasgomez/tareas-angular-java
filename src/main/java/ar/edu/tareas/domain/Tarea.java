@@ -57,6 +57,21 @@ public class Tarea extends Entity {
 	public void asignarA(Usuario usuario) {
 		this.asignatario = usuario;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		try {
+			Tarea otra = (Tarea)o;
+			return otra.getId().equals(this.getId());
+		} catch (ClassCastException e) {
+			return false;
+		}
+	}	
+
+	@Override 
+	public int hashCode() {
+		return this.getId().hashCode();
+	}
 
 	public String getDescripcion() {
 		return this.descripcion;

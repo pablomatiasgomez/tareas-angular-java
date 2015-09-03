@@ -13,8 +13,8 @@ public class Main {
 		JsonTransformer jsonTransformer = new JsonTransformer(gson);
 
 		Spark.port(9000);
-		Spark.staticFileLocation("/public");
+		Spark.staticFileLocation("/webapp");
 
-		new TareasController(jsonTransformer).register();
+		new TareasController(jsonTransformer, gson).register();
 	}
 }
